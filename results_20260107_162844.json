@@ -1,0 +1,102 @@
+{
+  "Bitcoin": {
+    "name": "Bitcoin",
+    "type": "crypto",
+    "timestamp": "2026-01-07T16:28:11.647740",
+    "technical_signal": "HOLD",
+    "predictions": {
+      "values": [
+        92607.203125,
+        92826.890625,
+        93063.6875,
+        93311.0546875,
+        93564.1796875,
+        93819.5859375,
+        94074.875
+      ],
+      "metrics": {
+        "MSE": 60642245.74960885,
+        "RMSE": 7787.313127748804,
+        "MAE": 6527.789194957767,
+        "R2": -1.5101007136937628
+      }
+    },
+    "alerts": []
+  },
+  "Ethereum": {
+    "name": "Ethereum",
+    "type": "crypto",
+    "timestamp": "2026-01-07T16:28:22.205304",
+    "technical_signal": "SELL",
+    "predictions": {
+      "values": [
+        3033.1435546875,
+        3050.460205078125,
+        3066.884521484375,
+        3081.466796875,
+        3093.817626953125,
+        3103.929931640625,
+        3112.02587890625
+      ],
+      "metrics": {
+        "MSE": 64874.689832755226,
+        "RMSE": 254.70510366452265,
+        "MAE": 203.692934347383,
+        "R2": -0.9390425104192242
+      }
+    },
+    "alerts": [
+      "[16:28:33] 🟡 TRUNG BÌNH Ethereum: MA20 vượt lên MA50 (Golden Cross)"
+    ]
+  },
+  "Cardano": {
+    "name": "Cardano",
+    "type": "crypto",
+    "timestamp": "2026-01-07T16:28:33.156695",
+    "technical_signal": "HOLD",
+    "predictions": {
+      "values": [
+        0.5038518309593201,
+        0.505909264087677,
+        0.5088478326797485,
+        0.5126182436943054,
+        0.517087996006012,
+        0.5220896601676941,
+        0.5274533033370972
+      ],
+      "metrics": {
+        "MSE": 0.018194684793396594,
+        "RMSE": 0.13488767472751761,
+        "MAE": 0.13014060423187265,
+        "R2": -3.603935203916625
+      }
+    },
+    "alerts": [
+      "[16:28:33] 🟡 TRUNG BÌNH Ethereum: MA20 vượt lên MA50 (Golden Cross)"
+    ]
+  },
+  "Apple": {
+    "name": "Apple",
+    "type": "stock",
+    "timestamp": "2026-01-07T16:28:42.220514",
+    "technical_signal": null,
+    "predictions": null,
+    "alerts": []
+  },
+  "Microsoft": {
+    "name": "Microsoft",
+    "type": "stock",
+    "timestamp": "2026-01-07T16:28:43.776003",
+    "technical_signal": null,
+    "predictions": null,
+    "alerts": []
+  },
+  "Tesla": {
+    "name": "Tesla",
+    "type": "stock",
+    "timestamp": "2026-01-07T16:28:44.152614",
+    "technical_signal": null,
+    "predictions": null,
+    "alerts": []
+  }
+}

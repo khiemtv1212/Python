@@ -158,7 +158,8 @@ class MarketAnalysisEngine:
         report += "=" * 80 + "\n\n"
         
         for asset_name, result in self.results.items():
-            if not result.get('data') is None or result.get('data').empty:
+            data = result.get('data')
+            if data is None or (hasattr(data, 'empty') and data.empty):
                 continue
             
             report += f"\n🏷️  {result['name']} ({result['type'].upper()})\n"

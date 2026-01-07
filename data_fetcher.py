@@ -95,8 +95,16 @@ class DataFetcher:
             )
             
             df = df.reset_index()
-            df.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
-            df = df[['Date', 'Open', 'High', 'Low', 'Close', 'Volume']]
+            
+            # Xử lý tên cột động
+            if 'Adj Close' in df.columns:
+                df = df[['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']]
+                df.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
+                df = df[['Date', 'Open', 'High', 'Low', 'Close', 'Volume']]
+            else:
+                df.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+                df = df[['Date', 'Open', 'High', 'Low', 'Close', 'Volume']]
+            
             df = df.sort_values('Date').reset_index(drop=True)
             
             logger.info(f"✓ Lấy dữ liệu {symbol} thành công: {len(df)} records")
