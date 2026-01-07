@@ -1,0 +1,37 @@
+{
+  "name": "PhimHay",
+  "base_url": "https://phimhay.co.in",
+  "list_url": "https://phimhay.co.in/",
+  "pagination": {
+    "type": "url_param",
+    "param_name": "page",
+    "start_page": 1
+  },
+  "selectors": {
+    "item_container": ".film-item, .phim-item, [data-film], .movie-card",
+    "item_title": "h3 a, .phim-title a, .film-name, h2 a",
+    "item_url": "h3 a, .phim-title a, a.film-name, h2 a",
+    "item_image": "img.poster, img.thumbnail, img[alt*='poster']",
+    "item_rating": ".rating, .imdb-score, [data-rating], span.score",
+    "item_description_short": ".phim-description, .film-description, p.description"
+  },
+  "detail_selectors": {
+    "title": "h1.page-title, h1, .phim-title, .film-title",
+    "description": ".synopsis, .description, .content-detail, div.plot-summary",
+    "rating": "span.rating-score, span.imdb-score, [data-rating], div.rating",
+    "year": "span.year, span.release-year, .nam-phat-hanh",
+    "genres": "span.genre, .the-loai, .genres, [data-genre]",
+    "duration": "span.duration, span.runtime, .duration-time",
+    "image": "img.cover, img.poster, img[alt*='poster']",
+    "status": "span.status, .tinh-trang, [data-status]",
+    "episodes": "span.episodes, span.tap, .episode-count, [data-episodes]"
+  },
+  "delay_between_items": 1,
+  "delay_between_pages": 2,
+  "enable_javascript": false,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Referer": "https://phimhay.co.in/"
+  },
+  "cookies": {}
+}
