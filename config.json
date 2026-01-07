@@ -1,0 +1,49 @@
+{
+  "cryptos": [
+    {
+      "name": "Bitcoin",
+      "symbol": "bitcoin",
+      "days": 365
+    },
+    {
+      "name": "Ethereum",
+      "symbol": "ethereum",
+      "days": 365
+    },
+    {
+      "name": "Cardano",
+      "symbol": "cardano",
+      "days": 365
+    }
+  ],
+  "stocks": [
+    {
+      "name": "Apple",
+      "symbol": "AAPL",
+      "days": 365
+    },
+    {
+      "name": "Microsoft",
+      "symbol": "MSFT",
+      "days": 365
+    },
+    {
+      "name": "Tesla",
+      "symbol": "TSLA",
+      "days": 365
+    }
+  ],
+  "alert_thresholds": {
+    "rsi_oversold": 30,
+    "rsi_overbought": 70,
+    "price_change_percent": 5,
+    "volatility_threshold": 0.5
+  },
+  "ml_config": {
+    "lookback": 60,
+    "test_size": 0.2,
+    "epochs": 50,
+    "batch_size": 32,
+    "predict_days": 7
+  }
+}
