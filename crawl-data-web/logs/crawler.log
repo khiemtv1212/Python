@@ -1,0 +1,9 @@
+2026-01-07 17:52:47,985 - config.crawler_config - INFO - Configuration loaded: config/website_configs\phimhay.json
+2026-01-07 17:52:47,986 - __main__ - ERROR - Error: Can't instantiate abstract class FlexibleWebCrawler without an implementation for abstract methods 'crawl_movie_details', 'crawl_movie_list'
+Traceback (most recent call last):
+  File "d:\Project CODE\Python\crawl-data-web\crawl_with_images.py", line 288, in <module>
+    crawl_phimhay_with_images(pages=1, max_images=5, detail_crawl=False)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Project CODE\Python\crawl-data-web\crawl_with_images.py", line 37, in crawl_phimhay_with_images
+    crawler = FlexibleWebCrawler(config)
+TypeError: Can't instantiate abstract class FlexibleWebCrawler without an implementation for abstract methods 'crawl_movie_details', 'crawl_movie_list'
